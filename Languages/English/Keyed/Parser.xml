@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+    <!-- General -->
+    <RimDumper.Parser.Title>Name</RimDumper.Parser.Title>
+    <RimDumper.Parser.Description>Description</RimDumper.Parser.Description>
+    <RimDumper.Parser.Damage>Damage</RimDumper.Parser.Damage>
+    <RimDumper.Parser.MarketValue>Base market value</RimDumper.Parser.MarketValue>
+    <RimDumper.Parser.CooldownTime>Cooldown time</RimDumper.Parser.CooldownTime>
+    <RimDumper.Parser.WarmupTime>Warmup time</RimDumper.Parser.WarmupTime>
+
+    <!-- Apparel -->
+    <RimDumper.Parser.OnMapCount>Amount on the map</RimDumper.Parser.OnMapCount>
+    <RimDumper.Parser.CanCraft>Can craft</RimDumper.Parser.CanCraft>
+    <RimDumper.Parser.DefMaterial>Default material</RimDumper.Parser.DefMaterial>
+    <RimDumper.Parser.Material>Material</RimDumper.Parser.Material>
+    <RimDumper.Parser.TechLevel>Tech. Level</RimDumper.Parser.TechLevel>
+    <RimDumper.Parser.Body>Body</RimDumper.Parser.Body>
+    <RimDumper.Parser.Layer>Layer</RimDumper.Parser.Layer>
+
+    <!-- Ammos -->
+    <RimDumper.Parser.DamageArgs>Damage{0}</RimDumper.Parser.DamageArgs>
+    <RimDumper.Parser.DamageType>Damage type</RimDumper.Parser.DamageType>
+    <RimDumper.Parser.DamageTypeArgs>Damage type{0}</RimDumper.Parser.DamageTypeArgs>
+    <RimDumper.Parser.ArmorPenetration>Armor penetration</RimDumper.Parser.ArmorPenetration>
+    <RimDumper.Parser.ArmorPenetrationBlunt>Armor penetration blunt</RimDumper.Parser.ArmorPenetrationBlunt>
+    <RimDumper.Parser.ArmorPenetrationSharp>Armor penetration sharp</RimDumper.Parser.ArmorPenetrationSharp>
+    <RimDumper.Parser.Speed>Speed</RimDumper.Parser.Speed>
+
+    <!-- Animals -->
+    <RimDumper.Parser.MeleeDPS>Melee DPS</RimDumper.Parser.MeleeDPS>
+    <RimDumper.Parser.MeleeArmorPenetration>Melee armor penetration</RimDumper.Parser.MeleeArmorPenetration>
+    <RimDumper.Parser.ManhunterOnTameFailChance>Manhunter on tame fail chance</RimDumper.Parser.ManhunterOnTameFailChance>
+    <RimDumper.Parser.Predator>Predator</RimDumper.Parser.Predator>
+    <RimDumper.Parser.Wildness>Wildness</RimDumper.Parser.Wildness>
+    <RimDumper.Parser.Petness>Petness</RimDumper.Parser.Petness>
+    <RimDumper.Parser.PackAnimal>Pack animal</RimDumper.Parser.PackAnimal>
+    <RimDumper.Parser.HerdAnimal>Herd animal</RimDumper.Parser.HerdAnimal>
+    <RimDumper.Parser.Trainability>Trainability</RimDumper.Parser.Trainability>
+    <RimDumper.Parser.MilkDef>MilkDef - Product</RimDumper.Parser.MilkDef>
+    <RimDumper.Parser.MilkIntervalDays>MilkDef - Days</RimDumper.Parser.MilkIntervalDays>
+    <RimDumper.Parser.MilkAmount>MilkDef - Amount</RimDumper.Parser.MilkAmount>
+    <RimDumper.Parser.WoolDef>WoolDef - Product</RimDumper.Parser.WoolDef>
+    <RimDumper.Parser.ShearIntervalDays>WoolDef - Days</RimDumper.Parser.ShearIntervalDays>
+    <RimDumper.Parser.WoolAmount>WoolDef - Amount</RimDumper.Parser.WoolAmount>
+    <RimDumper.Parser.Train1>None</RimDumper.Parser.Train1>
+    <RimDumper.Parser.Train2>Simple</RimDumper.Parser.Train2>
+    <RimDumper.Parser.Train3>Intermediate</RimDumper.Parser.Train3>
+    <RimDumper.Parser.Train4>Advanced</RimDumper.Parser.Train4>
+
+    <!-- Backstorys -->
+    <RimDumper.Parser.BackstorySlot>Backstory slot</RimDumper.Parser.BackstorySlot>
+    <RimDumper.Parser.spawnCategories>spawnCategories</RimDumper.Parser.spawnCategories>
+    <RimDumper.Parser.DisabledWorkGivers>DisabledWorkGivers</RimDumper.Parser.DisabledWorkGivers>
+    <RimDumper.Parser.DisabledWorkTypes>DisabledWorkTypes</RimDumper.Parser.DisabledWorkTypes>
+    <RimDumper.Parser.disallowedTraits>disallowedTraits</RimDumper.Parser.disallowedTraits>
+    <RimDumper.Parser.forcedTraits>forcedTraits</RimDumper.Parser.forcedTraits>
+    <RimDumper.Parser.workDisables>workDisables</RimDumper.Parser.workDisables>
+
+    <!-- BodyParts -->
+    <RimDumper.Parser.Efficiency>Efficiency</RimDumper.Parser.Efficiency>
+
+    <!-- Debuffs -->
+    <RimDumper.Parser.StackLimit>Stack limit</RimDumper.Parser.StackLimit>
+    <RimDumper.Parser.DurationDays>Duration days</RimDumper.Parser.DurationDays>
+    <RimDumper.Parser.StackedEffectMultiplier>Stacked effect multiplier</RimDumper.Parser.StackedEffectMultiplier>
+
+    <!-- Drugs -->
+    <RimDumper.Parser.DrugName>Drug name</RimDumper.Parser.DrugName>
+    <RimDumper.Parser.Addictiveness>Addictiveness(%)</RimDumper.Parser.Addictiveness>
+    <RimDumper.Parser.BaseSeverity>Base severity</RimDumper.Parser.BaseSeverity>
+    <RimDumper.Parser.MinToleranceToAddict>Min tolerance to addict</RimDumper.Parser.MinToleranceToAddict>
+    <RimDumper.Parser.SeverityPerDay>Severity per day(-)</RimDumper.Parser.SeverityPerDay>
+    <RimDumper.Parser.SeverityDays>Severity days</RimDumper.Parser.SeverityDays>
+    <RimDumper.Parser.BaseMoodEffect>Base mood effect</RimDumper.Parser.BaseMoodEffect>
+    <RimDumper.Parser.PainFactor>Pain factor</RimDumper.Parser.PainFactor>
+    <RimDumper.Parser.ThisStateStartsAfter>This state starts after: {0}</RimDumper.Parser.ThisStateStartsAfter>
+    <RimDumper.Parser.ForThisStateYouNeedToTakeTimes>For this state, you need to take times: x{0}</RimDumper.Parser.ForThisStateYouNeedToTakeTimes>
+    <RimDumper.Parser.ThisIsTheOnlyCondition>This is the only state</RimDumper.Parser.ThisIsTheOnlyCondition>
+    <RimDumper.Parser.Addiction>Addiction</RimDumper.Parser.Addiction>
+    <RimDumper.Parser.MinimumToleranceForAddiction>Minimum tolerance for addiction: {0}</RimDumper.Parser.MinimumToleranceForAddiction>
+    <RimDumper.Parser.TolerancePerDose>Tolerance per dose: {0}</RimDumper.Parser.TolerancePerDose>
+    <RimDumper.Parser.TheСhanceOfAddictionWillAppearAfterTheConsumedDoses>The chance of addiction will appear after the consumed doses: x{0}({1})</RimDumper.Parser.TheСhanceOfAddictionWillAppearAfterTheConsumedDoses>
+
+
+    <!-- Facilities -->
+    <RimDumper.Parser.MaxOnBuild>Maximum per building</RimDumper.Parser.MaxOnBuild>
+    <RimDumper.Parser.Buildings>Affect buildings</RimDumper.Parser.Buildings>
+
+    <!-- Foods -->
+    <RimDumper.Parser.Nutrition>Nutrition</RimDumper.Parser.Nutrition>
+    <RimDumper.Parser.JoyKind>Joy kind</RimDumper.Parser.JoyKind>
+    <RimDumper.Parser.Joy>Joy</RimDumper.Parser.Joy>
+    <RimDumper.Parser.IsCorpse>Is corpse</RimDumper.Parser.IsCorpse>
+    <RimDumper.Parser.IsMeat>Is meat</RimDumper.Parser.IsMeat>
+    <RimDumper.Parser.IsMeal>Is meal</RimDumper.Parser.IsMeal>
+    <RimDumper.Parser.DrugCategory>Drug category</RimDumper.Parser.DrugCategory>
+    <RimDumper.Parser.FoodType>Food type</RimDumper.Parser.FoodType>
+    <RimDumper.Parser.IngestEffect>Ingest effect</RimDumper.Parser.IngestEffect>
+    <RimDumper.Parser.Preferability>Preferability</RimDumper.Parser.Preferability>
+
+    <!-- Tools -->
+    <RimDumper.Parser.Category>Category</RimDumper.Parser.Category>
+    <RimDumper.Parser.IsStuff>Is stuff</RimDumper.Parser.IsStuff>
+
+    <!-- Traits -->
+    <RimDumper.Parser.conflictingTraits>conflictingTraits</RimDumper.Parser.conflictingTraits>
+    <RimDumper.Parser.disabledWorkTags>disabledWorkTags</RimDumper.Parser.disabledWorkTags>
+    <RimDumper.Parser.requiredWorkTypes>requiredWorkTypes</RimDumper.Parser.requiredWorkTypes>
+    <RimDumper.Parser.requiredWorkTags>requiredWorkTags</RimDumper.Parser.requiredWorkTags>
+
+    <!-- WeaponsRanged -->
+    <RimDumper.Parser.Dps>DPS</RimDumper.Parser.Dps>
+    <RimDumper.Parser.CE_OneHanded>One handed</RimDumper.Parser.CE_OneHanded>
+    <RimDumper.Parser.WeaponTags>Weapon tags</RimDumper.Parser.WeaponTags>
+    <RimDumper.Parser.Rpm>RPM</RimDumper.Parser.Rpm>
+    <RimDumper.Parser.BurstShotCount>Burst shot count</RimDumper.Parser.BurstShotCount>
+    <RimDumper.Parser.CE_SightsEfficiency>CE: Sights efficiency</RimDumper.Parser.CE_SightsEfficiency>
+    <RimDumper.Parser.CE_ShotSpread>CE: Shot spread</RimDumper.Parser.CE_ShotSpread>
+    <RimDumper.Parser.CE_SwayFactor>CE: Sway factor</RimDumper.Parser.CE_SwayFactor>
+    <RimDumper.Parser.Range>Range</RimDumper.Parser.Range>
+    <RimDumper.Parser.Accuracy>Accuracy</RimDumper.Parser.Accuracy>
+
+    <!-- Plants -->
+    <RimDumper.Parser.NutritionPer10Days>Nutrition per 10 days(Soil 180%)</RimDumper.Parser.NutritionPer10Days>
+    <RimDumper.Parser.MarketValuePer10Days>Market value per 10 days(Soil 180%)</RimDumper.Parser.MarketValuePer10Days>
+    <RimDumper.Parser.GrowDays>Grow days</RimDumper.Parser.GrowDays>
+    <RimDumper.Parser.GrowMinGlow>Grow min glow</RimDumper.Parser.GrowMinGlow>
+    <RimDumper.Parser.FertilityMin>Min fertility</RimDumper.Parser.FertilityMin>
+    <RimDumper.Parser.FertilitySensitivity>Fertility sensitivity</RimDumper.Parser.FertilitySensitivity>
+    <RimDumper.Parser.HarvestYield>Harvest yield</RimDumper.Parser.HarvestYield>
+    <RimDumper.Parser.LifespanDays>Lifespan days</RimDumper.Parser.LifespanDays>
+    <RimDumper.Parser.Sowable>Sowable</RimDumper.Parser.Sowable>
+    <RimDumper.Parser.IsTree>Is tree</RimDumper.Parser.IsTree>
+    <RimDumper.Parser.SowMinSkill>Sow min skill</RimDumper.Parser.SowMinSkill>
+    <RimDumper.Parser.HarvestedThingDef>Harvested ThingDef</RimDumper.Parser.HarvestedThingDef>
+    <RimDumper.Parser.ProductNutrition>Harvest: Nutrition</RimDumper.Parser.ProductNutrition>
+    <RimDumper.Parser.ProductPreferability>Harvest: Preferability</RimDumper.Parser.ProductPreferability>
+    <RimDumper.Parser.ProductDaysToRotStart>Harvest: Days To Rot Start</RimDumper.Parser.ProductDaysToRotStart>
+    <RimDumper.Parser.ProductMarketValue>Harvest: Market Value</RimDumper.Parser.ProductMarketValue>
+
+</LanguageData>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+    <!-- General -->
+    <RimDumper.Parser.Title>Наименование</RimDumper.Parser.Title>
+    <RimDumper.Parser.Description>Описание</RimDumper.Parser.Description>
+    <RimDumper.Parser.Damage>Урон</RimDumper.Parser.Damage>
+    <RimDumper.Parser.MarketValue>Цена</RimDumper.Parser.MarketValue>
+    <RimDumper.Parser.CooldownTime>Перезарядка</RimDumper.Parser.CooldownTime>
+    <RimDumper.Parser.WarmupTime>Изготовка</RimDumper.Parser.WarmupTime>
+
+    <!-- Apparel -->
+    <RimDumper.Parser.OnMapCount>На карте</RimDumper.Parser.OnMapCount>
+    <RimDumper.Parser.CanCraft>С рецептом</RimDumper.Parser.CanCraft>
+    <RimDumper.Parser.DefMaterial>Стандартный Материал</RimDumper.Parser.DefMaterial>
+    <RimDumper.Parser.Material>Материал</RimDumper.Parser.Material>
+    <RimDumper.Parser.TechLevel>Техн. уровень</RimDumper.Parser.TechLevel>
+    <RimDumper.Parser.Body>Тело</RimDumper.Parser.Body>
+    <RimDumper.Parser.Layer>Слой</RimDumper.Parser.Layer>
+
+    <!-- Ammos -->
+    <RimDumper.Parser.DamageArgs>Урон{0}</RimDumper.Parser.DamageArgs>
+    <RimDumper.Parser.DamageType>Тип урона</RimDumper.Parser.DamageType>
+    <RimDumper.Parser.DamageTypeArgs>Тип урона{0}</RimDumper.Parser.DamageTypeArgs>
+    <RimDumper.Parser.ArmorPenetration>Бронепробитие</RimDumper.Parser.ArmorPenetration>
+    <RimDumper.Parser.ArmorPenetrationBlunt>Бронепробитие: Удар</RimDumper.Parser.ArmorPenetrationBlunt>
+    <RimDumper.Parser.ArmorPenetrationSharp>Бронепробитие: Проникновение</RimDumper.Parser.ArmorPenetrationSharp>
+    <RimDumper.Parser.Speed>Скорость</RimDumper.Parser.Speed>
+
+    <!-- Animals -->
+    <RimDumper.Parser.MeleeDPS>Урон/сек в ближнем бою</RimDumper.Parser.MeleeDPS>
+    <RimDumper.Parser.MeleeArmorPenetration>Бронепробитие врукопашную</RimDumper.Parser.MeleeArmorPenetration>
+    <RimDumper.Parser.ManhunterOnTameFailChance>Шанс напад. при неуд. приручении</RimDumper.Parser.ManhunterOnTameFailChance>
+    <RimDumper.Parser.Predator>Хищник</RimDumper.Parser.Predator>
+    <RimDumper.Parser.Wildness>Дикость</RimDumper.Parser.Wildness>
+    <RimDumper.Parser.Petness>Petness</RimDumper.Parser.Petness>
+    <RimDumper.Parser.PackAnimal>Для каравана</RimDumper.Parser.PackAnimal>
+    <RimDumper.Parser.HerdAnimal>Стадное животное</RimDumper.Parser.HerdAnimal>
+    <RimDumper.Parser.Trainability>Способность к обучению</RimDumper.Parser.Trainability>
+    <RimDumper.Parser.MilkDef>MilkDef - Продукт</RimDumper.Parser.MilkDef>
+    <RimDumper.Parser.MilkIntervalDays>MilkDef - Дней</RimDumper.Parser.MilkIntervalDays>
+    <RimDumper.Parser.MilkAmount>MilkDef - Количество</RimDumper.Parser.MilkAmount>
+    <RimDumper.Parser.WoolDef>WoolDef - Продукт</RimDumper.Parser.WoolDef>
+    <RimDumper.Parser.ShearIntervalDays>WoolDef - Дней</RimDumper.Parser.ShearIntervalDays>
+    <RimDumper.Parser.WoolAmount>WoolDef - Количество</RimDumper.Parser.WoolAmount>
+    <RimDumper.Parser.Train1>Послушание</RimDumper.Parser.Train1>
+    <RimDumper.Parser.Train2>Спустить с поводка</RimDumper.Parser.Train2>
+    <RimDumper.Parser.Train3>Спасение</RimDumper.Parser.Train3>
+    <RimDumper.Parser.Train4>Переноска</RimDumper.Parser.Train4>
+
+    <!-- Backstorys -->
+    <RimDumper.Parser.BackstorySlot>Слот</RimDumper.Parser.BackstorySlot>
+    <RimDumper.Parser.spawnCategories>spawnCategories</RimDumper.Parser.spawnCategories>
+    <RimDumper.Parser.DisabledWorkGivers>DisabledWorkGivers</RimDumper.Parser.DisabledWorkGivers>
+    <RimDumper.Parser.DisabledWorkTypes>DisabledWorkTypes</RimDumper.Parser.DisabledWorkTypes>
+    <RimDumper.Parser.disallowedTraits>disallowedTraits</RimDumper.Parser.disallowedTraits>
+    <RimDumper.Parser.forcedTraits>forcedTraits</RimDumper.Parser.forcedTraits>
+    <RimDumper.Parser.workDisables>workDisables</RimDumper.Parser.workDisables>
+
+    <!-- BodyParts -->
+    <RimDumper.Parser.Efficiency>Эффективность</RimDumper.Parser.Efficiency>
+
+    <!-- Debuffs -->
+    <RimDumper.Parser.StackLimit>Макс.кол-во</RimDumper.Parser.StackLimit>
+    <RimDumper.Parser.DurationDays>Длительность дней</RimDumper.Parser.DurationDays>
+    <RimDumper.Parser.StackedEffectMultiplier>Множитель</RimDumper.Parser.StackedEffectMultiplier>
+
+    <!-- Drugs -->
+    <RimDumper.Parser.DrugName>Вещество</RimDumper.Parser.DrugName>
+    <RimDumper.Parser.Addictiveness>Привыкание(%)</RimDumper.Parser.Addictiveness>
+    <RimDumper.Parser.BaseSeverity>Доза</RimDumper.Parser.BaseSeverity>
+    <RimDumper.Parser.MinToleranceToAddict>Мин.Толерантность для привыкания</RimDumper.Parser.MinToleranceToAddict>
+    <RimDumper.Parser.SeverityPerDay>Доза в день(спад)</RimDumper.Parser.SeverityPerDay>
+    <RimDumper.Parser.SeverityDays>Эффект дней</RimDumper.Parser.SeverityDays>
+    <RimDumper.Parser.BaseMoodEffect>Настроение</RimDumper.Parser.BaseMoodEffect>
+    <RimDumper.Parser.PainFactor>Боль</RimDumper.Parser.PainFactor>
+    <RimDumper.Parser.ThisStateStartsAfter>Это состояние начинается после: {0}</RimDumper.Parser.ThisStateStartsAfter>
+    <RimDumper.Parser.ForThisStateYouNeedToTakeTimes>Для этого состояния нужно принять раз: x{0}</RimDumper.Parser.ForThisStateYouNeedToTakeTimes>
+    <RimDumper.Parser.ThisIsTheOnlyCondition>Это единственное состояние</RimDumper.Parser.ThisIsTheOnlyCondition>
+    <RimDumper.Parser.Addiction>Ломка</RimDumper.Parser.Addiction>
+    <RimDumper.Parser.MinimumToleranceForAddiction>Минимальная толерантность для привыкания: {0}</RimDumper.Parser.MinimumToleranceForAddiction>
+    <RimDumper.Parser.TolerancePerDose>За приём добавляется толерантности: {0}</RimDumper.Parser.TolerancePerDose>
+    <RimDumper.Parser.TheСhanceOfAddictionWillAppearAfterTheConsumedDoses>Шанс привыкания появится после употребленных доз: x{0}({1})</RimDumper.Parser.TheСhanceOfAddictionWillAppearAfterTheConsumedDoses>
+
+    <!-- Facilities -->
+    <RimDumper.Parser.MaxOnBuild>Максимум на постройку</RimDumper.Parser.MaxOnBuild>
+    <RimDumper.Parser.Buildings>Применимо к постройкам</RimDumper.Parser.Buildings>
+
+    <!-- Foods -->
+    <RimDumper.Parser.Nutrition>Питательность</RimDumper.Parser.Nutrition>
+    <RimDumper.Parser.JoyKind>Тип развлечения</RimDumper.Parser.JoyKind>
+    <RimDumper.Parser.Joy>Развлечение</RimDumper.Parser.Joy>
+    <RimDumper.Parser.IsCorpse>Труп</RimDumper.Parser.IsCorpse>
+    <RimDumper.Parser.IsMeat>Мясо</RimDumper.Parser.IsMeat>
+    <RimDumper.Parser.IsMeal>Еда</RimDumper.Parser.IsMeal>
+    <RimDumper.Parser.DrugCategory>Наркотик</RimDumper.Parser.DrugCategory>
+    <RimDumper.Parser.FoodType>Тип</RimDumper.Parser.FoodType>
+    <RimDumper.Parser.IngestEffect>Эффект</RimDumper.Parser.IngestEffect>
+    <RimDumper.Parser.Preferability>Предпочтение</RimDumper.Parser.Preferability>
+
+    <!-- Tools -->
+    <RimDumper.Parser.Category>Категория</RimDumper.Parser.Category>
+    <RimDumper.Parser.IsStuff>Материал</RimDumper.Parser.IsStuff>
+
+    <!-- Traits -->
+    <RimDumper.Parser.conflictingTraits>conflictingTraits</RimDumper.Parser.conflictingTraits>
+    <RimDumper.Parser.disabledWorkTags>disabledWorkTags</RimDumper.Parser.disabledWorkTags>
+    <RimDumper.Parser.requiredWorkTypes>requiredWorkTypes</RimDumper.Parser.requiredWorkTypes>
+    <RimDumper.Parser.requiredWorkTags>requiredWorkTags</RimDumper.Parser.requiredWorkTags>
+
+    <!-- WeaponsRanged -->
+    <RimDumper.Parser.Dps>DPS</RimDumper.Parser.Dps>
+    <RimDumper.Parser.CE_OneHanded>Одноручное</RimDumper.Parser.CE_OneHanded>
+    <RimDumper.Parser.WeaponTags>Тэги</RimDumper.Parser.WeaponTags>
+    <RimDumper.Parser.Rpm>RPM</RimDumper.Parser.Rpm>
+    <RimDumper.Parser.BurstShotCount>Очередь</RimDumper.Parser.BurstShotCount>
+    <RimDumper.Parser.CE_SightsEfficiency>CE: Эфф. прицеливания</RimDumper.Parser.CE_SightsEfficiency>
+    <RimDumper.Parser.CE_ShotSpread>CE: Разброс</RimDumper.Parser.CE_ShotSpread>
+    <RimDumper.Parser.CE_SwayFactor>CE: Раскачивание</RimDumper.Parser.CE_SwayFactor>
+    <RimDumper.Parser.Range>Дальность</RimDumper.Parser.Range>
+    <RimDumper.Parser.Accuracy>Точность</RimDumper.Parser.Accuracy>
+
+    <!-- Plants -->
+    <RimDumper.Parser.NutritionPer10Days>Питательность урожая за 10 дней(Почва 180%)</RimDumper.Parser.NutritionPer10Days>
+    <RimDumper.Parser.MarketValuePer10Days>Ценность урожая за 10 дней(Почва 180%)</RimDumper.Parser.MarketValuePer10Days>
+    <RimDumper.Parser.GrowDays>Время созревания(дн.)</RimDumper.Parser.GrowDays>
+    <RimDumper.Parser.GrowMinGlow>Требование к свету</RimDumper.Parser.GrowMinGlow>
+    <RimDumper.Parser.FertilityMin>Мин. плодородность почвы</RimDumper.Parser.FertilityMin>
+    <RimDumper.Parser.FertilitySensitivity>Влияние плодородности</RimDumper.Parser.FertilitySensitivity>
+    <RimDumper.Parser.HarvestYield>Урожайность сбора</RimDumper.Parser.HarvestYield>
+    <RimDumper.Parser.LifespanDays>Продолжительность жизни</RimDumper.Parser.LifespanDays>
+    <RimDumper.Parser.Sowable>Можно сеять</RimDumper.Parser.Sowable>
+    <RimDumper.Parser.IsTree>Дерево</RimDumper.Parser.IsTree>
+    <RimDumper.Parser.SowMinSkill>Требуемый навык</RimDumper.Parser.SowMinSkill>
+    <RimDumper.Parser.HarvestedThingDef>Урожай</RimDumper.Parser.HarvestedThingDef>
+    <RimDumper.Parser.ProductNutrition>Урожай: Питательность</RimDumper.Parser.ProductNutrition>
+    <RimDumper.Parser.ProductPreferability>Урожай: Тип</RimDumper.Parser.ProductPreferability>
+    <RimDumper.Parser.ProductDaysToRotStart>Урожай: Время хранения(дн.)</RimDumper.Parser.ProductDaysToRotStart>
+    <RimDumper.Parser.ProductMarketValue>Урожай: Ценность</RimDumper.Parser.ProductMarketValue>
+
+</LanguageData>

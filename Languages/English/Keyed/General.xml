@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <!-- Main -->
+  <RimDumper.UI.Title>RimDumper</RimDumper.UI.Title>
+  <RimDumper.UI.Version>Version: {0}({1})</RimDumper.UI.Version>
+  <RimDumper.UI.EnableAll>Enable all</RimDumper.UI.EnableAll>
+  <RimDumper.UI.DisableAll>Disable all</RimDumper.UI.DisableAll>
+  <RimDumper.UI.ShowAll>Show all</RimDumper.UI.ShowAll>
+  <RimDumper.UI.HideAll>Hide all</RimDumper.UI.HideAll>
+  <RimDumper.UI.Waiting>Do not close this window{0}</RimDumper.UI.Waiting>
+  <RimDumper.UI.Dump>Dump</RimDumper.UI.Dump>
+  <RimDumper.UI.SaveAndOpen>Save</RimDumper.UI.SaveAndOpen>
+  <RimDumper.UI.Next>Forward &gt;</RimDumper.UI.Next>
+  <RimDumper.UI.Previous>&lt; Back</RimDumper.UI.Previous>
+
+  <!-- Pages -->
+  <RimDumper.UI.WaitingPage>Wait</RimDumper.UI.WaitingPage>
+  <RimDumper.UI.ColumnsPageTitle>Displayed columns</RimDumper.UI.ColumnsPageTitle>
+  <RimDumper.UI.SelectColumnsPage>Settings</RimDumper.UI.SelectColumnsPage>
+  <RimDumper.UI.ApparelFilterPageTitle>Filter clothing by parameters</RimDumper.UI.ApparelFilterPageTitle>
+
+  <!-- DumpSettingsPage -->
+  <RimDumper.UI.ColorizeValues>Colorize values</RimDumper.UI.ColorizeValues>
+  <RimDumper.UI.SaveAction>What to do after saving?</RimDumper.UI.SaveAction>
+  <RimDumper.UI.SaveAction_Nothing>Nothing</RimDumper.UI.SaveAction_Nothing>
+  <RimDumper.UI.SaveAction_OpenDirectory>Open directory</RimDumper.UI.SaveAction_OpenDirectory>
+  <RimDumper.UI.SaveAction_OpenDocument>Open document</RimDumper.UI.SaveAction_OpenDocument>
+
+  <!-- Apparel Filter -->
+  <RimDumper.UI.WithRecipe>Only with a recipe</RimDumper.UI.WithRecipe>
+  <RimDumper.UI.OrderByDescending>Order by descending</RimDumper.UI.OrderByDescending>
+  <RimDumper.UI.CountPerLayer>Count per layer</RimDumper.UI.CountPerLayer>
+  <RimDumper.UI.TargetParameter>Target parameter</RimDumper.UI.TargetParameter>
+  <RimDumper.UI.Any>Any</RimDumper.UI.Any>
+
+  <!-- Tables -->
+  <RimDumper.Table.Materials>Materials</RimDumper.Table.Materials>
+  <RimDumper.Table.WeaponsRanged>Weapons ranged</RimDumper.Table.WeaponsRanged>
+  <RimDumper.Table.WeaponsMelee>Weapons melee</RimDumper.Table.WeaponsMelee>
+  <RimDumper.Table.Apparel>Apparel</RimDumper.Table.Apparel>
+  <RimDumper.Table.Animals>Animals</RimDumper.Table.Animals>
+  <RimDumper.Table.Debuffs>Debuffs</RimDumper.Table.Debuffs>
+  <RimDumper.Table.Drugs>Drugs</RimDumper.Table.Drugs>
+  <RimDumper.Table.Foods>Foods</RimDumper.Table.Foods>
+  <RimDumper.Table.BodyParts>Body parts</RimDumper.Table.BodyParts>
+  <RimDumper.Table.Facilities>Facilities</RimDumper.Table.Facilities>
+  <RimDumper.Table.Plant>Plant</RimDumper.Table.Plant>
+  <RimDumper.Table.Backstorys>Backstorys</RimDumper.Table.Backstorys>
+  <RimDumper.Table.Traits>Traits</RimDumper.Table.Traits>
+  <RimDumper.Table.CEAmmos>Ammos</RimDumper.Table.CEAmmos>
+  <RimDumper.Table.Tools>Tools</RimDumper.Table.Tools>
+
+</LanguageData>

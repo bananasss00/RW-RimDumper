@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <!-- Main -->
+  <RimDumper.UI.Title>RimDumper</RimDumper.UI.Title>
+  <RimDumper.UI.Version>Версия: {0}({1})</RimDumper.UI.Version>
+  <RimDumper.UI.EnableAll>Включить все</RimDumper.UI.EnableAll>
+  <RimDumper.UI.DisableAll>Выключить все</RimDumper.UI.DisableAll>
+  <RimDumper.UI.ShowAll>Показать все</RimDumper.UI.ShowAll>
+  <RimDumper.UI.HideAll>Скрыть все</RimDumper.UI.HideAll>
+  <RimDumper.UI.Waiting>Не закрывайте это окно{0}</RimDumper.UI.Waiting>
+  <RimDumper.UI.Dump>Дамп</RimDumper.UI.Dump>
+  <RimDumper.UI.SaveAndOpen>Сохранить</RimDumper.UI.SaveAndOpen>
+  <RimDumper.UI.Next>Вперед &gt;</RimDumper.UI.Next>
+  <RimDumper.UI.Previous>&lt; Назад</RimDumper.UI.Previous>
+
+  <!-- Pages -->
+  <RimDumper.UI.WaitingPage>Подождите</RimDumper.UI.WaitingPage>
+  <RimDumper.UI.ColumnsPageTitle>Отображаемые колонки</RimDumper.UI.ColumnsPageTitle>
+  <RimDumper.UI.SelectColumnsPage>Настройки</RimDumper.UI.SelectColumnsPage>
+  <RimDumper.UI.ApparelFilterPageTitle>Фильтр одежды по параметрам</RimDumper.UI.ApparelFilterPageTitle>
+
+  <!-- DumpSettingsPage -->
+  <RimDumper.UI.ColorizeValues>Раскрашивать значения</RimDumper.UI.ColorizeValues>
+  <RimDumper.UI.SaveAction>Что делать после сохранения?</RimDumper.UI.SaveAction>
+  <RimDumper.UI.SaveAction_Nothing>Ничего</RimDumper.UI.SaveAction_Nothing>
+  <RimDumper.UI.SaveAction_OpenDirectory>Открыть директорию</RimDumper.UI.SaveAction_OpenDirectory>
+  <RimDumper.UI.SaveAction_OpenDocument>Открыть документ</RimDumper.UI.SaveAction_OpenDocument>
+
+  <!-- Apparel Filter -->
+  <RimDumper.UI.WithRecipe>Только с рецептом</RimDumper.UI.WithRecipe>
+  <RimDumper.UI.OrderByDescending>Сортировка по убыванию</RimDumper.UI.OrderByDescending>
+  <RimDumper.UI.CountPerLayer>Количество на слой</RimDumper.UI.CountPerLayer>
+  <RimDumper.UI.TargetParameter>Параметр</RimDumper.UI.TargetParameter>
+  <RimDumper.UI.Any>Любой</RimDumper.UI.Any>
+
+  <!-- Tables -->
+  <RimDumper.Table.Materials>Материалы</RimDumper.Table.Materials>
+  <RimDumper.Table.WeaponsRanged>Оружия дальнего боя</RimDumper.Table.WeaponsRanged>
+  <RimDumper.Table.WeaponsMelee>Оружия ближнего боя</RimDumper.Table.WeaponsMelee>
+  <RimDumper.Table.Apparel>Одежда</RimDumper.Table.Apparel>
+  <RimDumper.Table.Animals>Животные</RimDumper.Table.Animals>
+  <RimDumper.Table.Debuffs>Дебафы</RimDumper.Table.Debuffs>
+  <RimDumper.Table.Drugs>Вещества</RimDumper.Table.Drugs>
+  <RimDumper.Table.Foods>Еда</RimDumper.Table.Foods>
+  <RimDumper.Table.BodyParts>Протезы</RimDumper.Table.BodyParts>
+  <RimDumper.Table.Facilities>Апгрейды построек</RimDumper.Table.Facilities>
+  <RimDumper.Table.Plant>Растения</RimDumper.Table.Plant>
+  <RimDumper.Table.Backstorys>Предыстории</RimDumper.Table.Backstorys>
+  <RimDumper.Table.Traits>Черты характера</RimDumper.Table.Traits>
+  <RimDumper.Table.CEAmmos>Патроны</RimDumper.Table.CEAmmos>
+  <RimDumper.Table.Tools>Инструменты</RimDumper.Table.Tools>
+
+</LanguageData>

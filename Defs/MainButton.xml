@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <MainButtonDef>
+    <defName>RimDumper_UI</defName>
+    <label>RimDumper</label>
+    <description>RimDumper</description>
+    <tabWindowClass>RimDumper.UI.UserInterface</tabWindowClass>
+    <order>491</order>
+    <!--<defaultHotKey>F12</defaultHotKey>-->
+    <validWithoutMap>true</validWithoutMap>
+	<minimized>True</minimized>
+	<iconPath>Buttons/RimDumperIcon</iconPath>
+  </MainButtonDef>
+</Defs>
