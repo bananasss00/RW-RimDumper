@@ -1,6 +1,6 @@
 # RimDumper
 
-**[RUS]**
+### [RUSSIAN]
 
 Мод для дампа различной инфы в таблицы Xlsx.
 ## Возможности
@@ -19,7 +19,7 @@ https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp
 3) В RimWorld нажмите кнопку **Загрузить пользовательские парсеры**
 4) Если будут ошибки компиляции они отобразятся в консоле RimWorld
 
-**[ENG]**
+### [ENGLISH]
 
 Mod for dumping various information in Xlsx tables.
 ## Features
