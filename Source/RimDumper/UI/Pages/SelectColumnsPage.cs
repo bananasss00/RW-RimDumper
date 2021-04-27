@@ -34,7 +34,7 @@ namespace RimDumper.UI.Pages
 
             // Select columns btns
             imui.ScrollStart("SelectColumnPage.Parsers");
-            var apparelParser = TableManager.GetParsers().OfType<ApparelParser>().First();
+            var apparelParser = ParserStorage.OfType<ApparelParser>().First();
             foreach (var table in TableManager.Tables)
             {
                 if (table.Name.Equals(apparelParser.Name))

@@ -35,38 +35,46 @@ namespace RimDumper.UI.Pages
 
             UserInterface.CurrentPage = "Title".UiTranslate();
 
-            const float splitCanvasHight = 85f;
+            const float splitCanvasHight = 60f;
             Rect top = canvas.TopPartPixels(canvas.height - splitCanvasHight); ;
             Rect bottom = canvas.BottomPartPixels(splitCanvasHight); // 3 buttons
 
             Listing_Styled imui = new();
             imui.Begin(top, elementHeight: UserInterface.ElementHeight, gapSize: UserInterface.GapSize);
 
+            // Inject custom parsers
+            if (imui.ButtonText("InjectParsers".UiTranslate()))
+            {
+                ParserStorage.LoadCustomFromSource();
+            }
+            //imui.GapLine();
+
             imui.PushStyle(GameFont.Small, Color.gray);
             imui.Label("Version".UiTranslate(version, compileTime.ToLocalTime().ToString("dd.MM.yyyy HH:mm:ss")));
             imui.PopStyle();
+
             //if (imui.ButtonText("TEST")) OpenPage<TestPage>();
 
             // Buttons all on/off
             imui.SameLinePercent(0.5f, 0.5f);
             if (imui.ButtonText("EnableAll".UiTranslate()))
             {
-                TableManager.SetEnabled(true);
+                ParserStorage.SetEnabled(true);
             }
             if (imui.ButtonText("DisableAll".UiTranslate()))
             {
-                TableManager.SetEnabled(false);
+                ParserStorage.SetEnabled(false);
             }
 
             // Parsers
             imui.ScrollStart("MainPage.Parsers");
-            foreach (var parser in TableManager.GetParsers())
+            foreach (var parser in ParserStorage.All())
             {
-                bool value = TableManager.IsEnabled(parser);
+                bool value = ParserStorage.IsEnabled(parser);
                 string parserName = (parser.IsCustomParser() ? "[*]" : "") + parser.Name;
                 if (imui.DubsCheckbox(parserName, ref value))
                 {
-                    TableManager.SetEnabled(value, parser);
+                    ParserStorage.SetEnabled(value, parser);
                 }
             }
             imui.ScrollEnd("MainPage.Parsers");
@@ -76,16 +84,6 @@ namespace RimDumper.UI.Pages
 
             // imui.GapLine();
 
-            // Inject custom parsers
-            if (imui.ButtonText("InjectParsers".UiTranslate()))
-            {
-                TableManager.ClearParsers();
-                var parsers = CustomParsers.GenerateCustomParsers();
-                foreach (var parser in parsers)
-                {
-                    TableManager.AddParser(parser);
-                }
-            }
             if (imui.ButtonText("Dump".UiTranslate()))
             {
                 var waitingPage = Open<WaitingPage>();
