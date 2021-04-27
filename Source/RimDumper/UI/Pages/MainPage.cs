@@ -1,13 +1,19 @@
 //#define DEBUG
 
 using System;
-using Verse;
-//using HarmonyLib;
-using UnityEngine;
-using System.Reflection;
+using System.CodeDom.Compiler;
+using System.Collections.Generic;
+using System.IO;
 using System.Linq;
-using RimDumper.Extensions;
+using System.Reflection;
+using HarmonyLib;
 using ImUILib;
+//using Mono.Cecil;
+using RimDumper.Extensions;
+using RimDumper.Parsers;
+using UnityEngine;
+using Verse;
+//using AssemblyDefinition = Mono.Cecil.AssemblyDefinition;
 
 namespace RimDumper.UI.Pages
 {
@@ -29,9 +35,9 @@ namespace RimDumper.UI.Pages
 
             UserInterface.CurrentPage = "Title".UiTranslate();
 
-            const float splitCanvasHight = 60f;
+            const float splitCanvasHight = 85f;
             Rect top = canvas.TopPartPixels(canvas.height - splitCanvasHight); ;
-            Rect bottom = canvas.BottomPartPixels(splitCanvasHight); // 2 buttons
+            Rect bottom = canvas.BottomPartPixels(splitCanvasHight); // 3 buttons
 
             Listing_Styled imui = new();
             imui.Begin(top, elementHeight: UserInterface.ElementHeight, gapSize: UserInterface.GapSize);
@@ -45,27 +51,22 @@ namespace RimDumper.UI.Pages
             imui.SameLinePercent(0.5f, 0.5f);
             if (imui.ButtonText("EnableAll".UiTranslate()))
             {
-                foreach (var parser in TableManager.Parsers.Keys.ToList())
-                {
-                    TableManager.Parsers[parser] = true;
-                }
+                TableManager.SetEnabled(true);
             }
             if (imui.ButtonText("DisableAll".UiTranslate()))
             {
-                foreach (var parser in TableManager.Parsers.Keys.ToList())
-                {
-                    TableManager.Parsers[parser] = false;
-                }
+                TableManager.SetEnabled(false);
             }
 
             // Parsers
             imui.ScrollStart("MainPage.Parsers");
-            foreach (var parser in TableManager.Parsers.Keys.ToList())
+            foreach (var parser in TableManager.GetParsers())
             {
-                bool value = TableManager.Parsers[parser];
-                if (imui.DubsCheckbox(parser.Name, ref value))
+                bool value = TableManager.IsEnabled(parser);
+                string parserName = (parser.IsCustomParser() ? "[*]" : "") + parser.Name;
+                if (imui.DubsCheckbox(parserName, ref value))
                 {
-                    TableManager.Parsers[parser] = value;
+                    TableManager.SetEnabled(value, parser);
                 }
             }
             imui.ScrollEnd("MainPage.Parsers");
@@ -75,6 +76,16 @@ namespace RimDumper.UI.Pages
 
             // imui.GapLine();
 
+            // Inject custom parsers
+            if (imui.ButtonText("InjectParsers".UiTranslate()))
+            {
+                TableManager.ClearParsers();
+                var parsers = CustomParsers.GenerateCustomParsers();
+                foreach (var parser in parsers)
+                {
+                    TableManager.AddParser(parser);
+                }
+            }
             if (imui.ButtonText("Dump".UiTranslate()))
             {
                 var waitingPage = Open<WaitingPage>();

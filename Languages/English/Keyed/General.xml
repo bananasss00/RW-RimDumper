@@ -13,6 +13,7 @@
   <RimDumper.UI.SaveAndOpen>Save</RimDumper.UI.SaveAndOpen>
   <RimDumper.UI.Next>Forward &gt;</RimDumper.UI.Next>
   <RimDumper.UI.Previous>&lt; Back</RimDumper.UI.Previous>
+  <RimDumper.UI.InjectParsers>Load custom parsers</RimDumper.UI.InjectParsers>
 
   <!-- Pages -->
   <RimDumper.UI.WaitingPage>Wait</RimDumper.UI.WaitingPage>

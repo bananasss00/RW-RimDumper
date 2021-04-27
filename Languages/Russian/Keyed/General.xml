@@ -13,6 +13,7 @@
   <RimDumper.UI.SaveAndOpen>Сохранить</RimDumper.UI.SaveAndOpen>
   <RimDumper.UI.Next>Вперед &gt;</RimDumper.UI.Next>
   <RimDumper.UI.Previous>&lt; Назад</RimDumper.UI.Previous>
+  <RimDumper.UI.InjectParsers>Загрузить пользовательские парсеры</RimDumper.UI.InjectParsers>
 
   <!-- Pages -->
   <RimDumper.UI.WaitingPage>Подождите</RimDumper.UI.WaitingPage>

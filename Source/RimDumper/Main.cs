@@ -70,11 +70,13 @@ namespace RimDumper
     public class RimDumperMod : Mod
     {
         public static RimDumperMod Instance { get; private set; } = null!;
+        public static string RootDir = string.Empty;
 
         public RimDumperMod(ModContentPack content) : base(content)
         {
             Instance = this;
             GetSettings<Settings>();
+            RootDir = content.RootDir;
         }
     }
 

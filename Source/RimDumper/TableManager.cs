@@ -10,12 +10,15 @@ using System.Threading.Tasks;
 using RimDumper.Parsers;
 using UnityEngine;
 using OfficeOpenXml.Table;
+using System.Linq;
+using System.Reflection;
+
 
 namespace RimDumper
 {
-    public class TableManager
+    public static class TableManager
     {
-        public static readonly Dictionary<Parser, bool> Parsers = new()
+        private static readonly Dictionary<Parser, bool> Parsers = new()
         {
             { new MaterialParser(), false },
             { new ApparelParser(true), false },
@@ -34,9 +37,61 @@ namespace RimDumper
             { new DrugParser(), false },
         };
 
+        private static readonly Dictionary<Parser, bool> CustomParsers = new();
+
         public static readonly TableCollection Tables = new();
         public static readonly XlsxTableFormat XlsxFormat = new(new XlsxTableStyleColorizer("TableStyle"));
         public static readonly string SavePath = GenFilePaths.FolderUnderSaveData("RimDumper");
+
+        public static bool IsCustomParser(this Parser parser)
+        {
+            return parser.GetType().Assembly != Assembly.GetExecutingAssembly();
+        }
+
+        public static Parser[] GetParsers()
+        {
+            return CustomParsers.Keys.Union(Parsers.Keys).ToArray();
+        }
+
+        public static bool IsEnabled(Parser parser)
+        {
+            if (Parsers.ContainsKey(parser))
+                return Parsers[parser];
+            if (CustomParsers.ContainsKey(parser))
+                return CustomParsers[parser];
+            return false;
+        }
+
+        public static void SetEnabled(bool value, Parser? parser = null)
+        {
+            if (parser != null)
+            {
+                if (Parsers.ContainsKey(parser))
+                    Parsers[parser] = value;
+                else if (CustomParsers.ContainsKey(parser))
+                    CustomParsers[parser] = value;
+                return;
+            }
+
+            foreach (var key in Parsers.Keys.ToList())
+            {
+                Parsers[key] = value;
+            }
+            foreach (var key in CustomParsers.Keys.ToList())
+            {
+                CustomParsers[key] = value;
+            }
+        }
+
+        public static void AddParser(Parser parser)
+        {
+            CustomParsers.Add(parser, true);
+        }
+
+        public static void ClearParsers()
+        {
+            CustomParsers.Clear();
+        }
 
         /// <summary>
         /// CAUSE CRASH WHEN CALLING:
@@ -77,7 +132,8 @@ namespace RimDumper
             Tables.Clear();
             try
             {
-                foreach (var parser in Parsers)
+                var parsers = Parsers.Union(CustomParsers).ToList();
+                foreach (var parser in parsers)
                 {
                     if (parser.Value)
                     {
