@@ -37,6 +37,14 @@ namespace RimDumper.UI.Pages
             {
                 Settings.ColorizeValues = value;
             }
+            value = Settings.GoogleTablesMode;
+            imui.ElementHeight.Push(UserInterface.ElementHeight * 2);
+            imui.DubsCheckbox("GoogleTablesMode".UiTranslate(), ref value);
+            imui.ElementHeight.Pop();
+            if (value != Settings.GoogleTablesMode)
+            {
+                Settings.GoogleTablesMode = value;
+            }
 			
 			imui.GapLine();
 

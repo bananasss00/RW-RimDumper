@@ -17,6 +17,7 @@ namespace RimDumper
         private static bool _settingsChanged = false;
 
         private static bool colorizeValues = true;
+        private static bool googleTablesMode = true;
         private static SaveAndOpenAction saveAndOpenAction = SaveAndOpenAction.OpenDocument;
 
         public static SaveAndOpenAction SaveAndOpenAction
@@ -39,10 +40,21 @@ namespace RimDumper
             }
         }
 
+        public static bool GoogleTablesMode
+        {
+            get => googleTablesMode;
+            set
+            {
+                googleTablesMode = value;
+                _settingsChanged = true;
+            }
+        }
+
         public override void ExposeData()
         {
             Scribe_Values.Look(ref saveAndOpenAction, "SaveAndOpenAction", SaveAndOpenAction.OpenDocument);
             Scribe_Values.Look(ref colorizeValues, "ColorizeValues", true);
+            Scribe_Values.Look(ref googleTablesMode, "GoogleTablesMode", false);
             _settingsChanged = false;
         }
 

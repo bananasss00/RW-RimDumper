@@ -17,7 +17,7 @@ namespace RimDumper
     public static class TableManager
     {
         public static readonly TableCollection Tables = new();
-        public static readonly XlsxTableFormat XlsxFormat = new(new XlsxTableStyleColorizer("TableStyle"));
+        public static readonly XlsxTableFormat XlsxFormat = new(new XlsxTableStyleExtended("TableStyle"));
         public static readonly string SavePath = GenFilePaths.FolderUnderSaveData("RimDumper");
 
         public static void Update(Action? callback = null)

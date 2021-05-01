@@ -10,19 +10,10 @@ using OfficeOpenXml.ConditionalFormatting;
 
 namespace RimDumper
 {
-    public class XlsxTableStyleColorizer : XlsxTableStyle
+    public class CellColorizer
     {
-        public XlsxTableStyleColorizer(string styleName) : base(styleName)
+        public void CreateTableStyle(string tableName, ExcelPackage pck, ExcelWorksheet ws, int rowCount, int colCount)
         {
-        }
-
-        public override void CreateTableStyle(string tableName, ExcelPackage pck, ExcelWorksheet ws, int rowCount, int colCount)
-        {
-            base.CreateTableStyle(tableName, pck, ws, rowCount, colCount);
-
-			if (!Settings.ColorizeValues || rowCount < 2)
-				return;
-
 			for (int i = 1; i <= colCount; i++)
             {
                 Type? columnType = GetFormattedColumnType(ws, i, rowCount);

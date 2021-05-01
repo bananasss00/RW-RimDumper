@@ -23,6 +23,7 @@
 
   <!-- DumpSettingsPage -->
   <RimDumper.UI.ColorizeValues>Colorize values</RimDumper.UI.ColorizeValues>
+  <RimDumper.UI.GoogleTablesMode>Google.Tables compatibility mode (MS Excel conflict)</RimDumper.UI.GoogleTablesMode>
   <RimDumper.UI.SaveAction>What to do after saving?</RimDumper.UI.SaveAction>
   <RimDumper.UI.SaveAction_Nothing>Nothing</RimDumper.UI.SaveAction_Nothing>
   <RimDumper.UI.SaveAction_OpenDirectory>Open directory</RimDumper.UI.SaveAction_OpenDirectory>
