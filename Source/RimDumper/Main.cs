@@ -17,7 +17,7 @@ namespace RimDumper
         private static bool _settingsChanged = false;
 
         private static bool colorizeValues = true;
-        private static bool googleTablesMode = true;
+        private static bool googleTablesMode = false;
         private static SaveAndOpenAction saveAndOpenAction = SaveAndOpenAction.OpenDocument;
 
         public static SaveAndOpenAction SaveAndOpenAction
