@@ -14,20 +14,37 @@ namespace RimDumper.Parsers
         public override Table? Create()
         {
             Table table = new(Name);
-            var defs = from d in DefDatabase<ThingDef>.AllDefs
+            var defs = (from d in DefDatabase<ThingDef>.AllDefs
                        where d.IsStuff
                        orderby d.BaseMarketValue
-                       select d;
+                       select d).ToList();
 
+            // split column filling for sorting
+            var rows = defs.ToDictionary(def => def, row => table.NewRow());
+
+            // fill base information
             foreach (var d in defs)
             {
-                var row = table.NewRow();
+                var row = rows[d];
                 row["Title".ParserTranslate()] = d.LabelCap;
                 row["Description".ParserTranslate()] = d.DescriptionDetailed;
                 row["OnMapCount".ParserTranslate()] = d.CountOnMap();
                 row["Category".ParserTranslate()] = GetCategory(d);
-                row.FillFrom(d.stuffProps?.statFactors);
-                row.FillFrom(d.stuffProps?.statOffsets);
+                row.FillFrom(d.statBases);
+            }
+
+            // factors
+            foreach (var d in defs)
+            {
+                var row = rows[d];
+                row.FillFrom(d.stuffProps?.statFactors, "(x)");
+            }
+
+            // offsets
+            foreach (var d in defs)
+            {
+                var row = rows[d];
+                row.FillFrom(d.stuffProps?.statOffsets, "(+)");
             }
             return table;
         }

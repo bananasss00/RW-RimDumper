@@ -7,16 +7,21 @@ namespace RimDumper.Extensions
 {
     public static class RowExtensions
     {
-        public static void FillFrom(this Row row, IEnumerable<StatModifier>? stats)
+        public static void FillFrom(this Row row, IEnumerable<StatModifier>? stats, string prefix = "")
         {
             if (stats == null)
             {
                 return;
             }
 
+            if (!string.IsNullOrWhiteSpace(prefix))
+            {
+                prefix = prefix + "\r\n";
+            }
+
             foreach (var sm in stats)
             {
-                row[sm.stat.LabelCap] = sm.value.Nullify().ByStyle(sm.stat.toStringStyle);
+                row[prefix + sm.stat.LabelCap] = sm.value.Nullify().ByStyle(sm.stat.toStringStyle);
             }
         }
 

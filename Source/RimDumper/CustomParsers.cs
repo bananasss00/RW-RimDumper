@@ -12,6 +12,7 @@ namespace RimDumper
 {
     public class CustomParsers
     {
+        private const string DllNamePrefix = "CustParser.";
         delegate void LogFn(string msg, bool ignoreStopLimit = false);
 
         public static Parser[] GenerateCustomParsers()
@@ -81,7 +82,7 @@ namespace RimDumper
         private static void RenameInternalDllName(string? outputFileName, string outputFileNameCecil, string internalAssemblyFileName)
         {
             var asmCecil = Mono.Cecil.AssemblyDefinition.ReadAssembly(outputFileName);
-            asmCecil.Name = new Mono.Cecil.AssemblyNameDefinition(internalAssemblyFileName, Version.Parse("1.0.0.0"));
+            asmCecil.Name = new Mono.Cecil.AssemblyNameDefinition(DllNamePrefix + internalAssemblyFileName, Version.Parse("1.0.0.0"));
             asmCecil.Write(outputFileNameCecil);
             asmCecil.Dispose();
         }
@@ -110,7 +111,11 @@ namespace RimDumper
         {
             var dlls = AppDomain.CurrentDomain.GetAssemblies().Where(p => !p.IsDynamic);
             foreach (var a in dlls)
+            {
+                if (a.GetName().Name.StartsWith(DllNamePrefix))
+                    continue; // skip previous injected parsers
                 parameters.ReferencedAssemblies.Add(a.GetName().Name + ".dll");
+            }
         }
     }
 }
