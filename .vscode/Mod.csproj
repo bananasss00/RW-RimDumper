@@ -33,10 +33,6 @@
       <Private>False</Private>
     </Reference>
 
-    <Reference Include="../../../RimWorldWin64_Data/Managed/UnityEngine*.dll">
-			<Private>False</Private>
-		</Reference>
-
   </ItemGroup>
 
   <Target Name="Date" BeforeTargets="BeforeBuild">

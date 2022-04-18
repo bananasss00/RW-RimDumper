@@ -27,7 +27,7 @@
       <Private>False</Private>
     </Reference>
 
-    <Reference Include="../../../../RimWorldWin64_Data/Managed/*.dll">
+    <Reference Include="../../Source/.packages/*.dll">
 			<Private>False</Private>
 		</Reference>
 

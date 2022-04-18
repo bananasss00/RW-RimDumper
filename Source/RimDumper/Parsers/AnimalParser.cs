@@ -61,7 +61,7 @@ namespace RimDumper.Parsers
                 if (tr != null && rescueDef != null)
                 {
                     row["Train1".ParserTranslate()] = tr >= TrainabilityDefOf.None.intelligenceOrder;
-                    row["Train2".ParserTranslate()] = tr >= TrainabilityDefOf.Simple.intelligenceOrder;
+                    //row["Train2".ParserTranslate()] = tr >= TrainabilityDefOf.Simple.intelligenceOrder;
                     row["Train3".ParserTranslate()] = tr >= TrainabilityDefOf.Intermediate.intelligenceOrder &&
                             d.race.baseBodySize >= rescueDef.minBodySize;
                     row["Train4".ParserTranslate()] = tr >= TrainabilityDefOf.Advanced.intelligenceOrder;

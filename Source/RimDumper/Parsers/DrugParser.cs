@@ -214,6 +214,10 @@ namespace RimDumper.Parsers
         private static float CalcSeverityLevelByMin(float severity, float minSeverity, out int count)
         {
             count = 0;
+
+            if (severity <= 0f)
+                return 0f;
+
             float result = 0;
             while (result < minSeverity)
             {

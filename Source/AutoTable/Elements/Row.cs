@@ -77,6 +77,14 @@ namespace AutoTable
 
         public void SetValue(Column column, object? value)
         {
+            var valueType = value?.GetType();
+            if (valueType is {IsPrimitive: false} && valueType != typeof(string))
+            {
+                value = value?.ToString();
+                //if (valueType != typeof(Verse.TaggedString))
+                //    Verse.Log.Warning($"Unsupported xlsx cell type: {valueType}. Converting value with ToString() method!");
+            }
+
             if (!_values.ContainsKey(column))
             {
                 _values.Add(column, value);

@@ -13,7 +13,7 @@ namespace RimDumper
     public class CustomParsers
     {
         private const string DllNamePrefix = "CustParser.";
-        delegate void LogFn(string msg, bool ignoreStopLimit = false);
+        delegate void LogFn(string msg);
 
         public static Parser[] GenerateCustomParsers()
         {

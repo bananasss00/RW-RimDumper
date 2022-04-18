@@ -49,7 +49,7 @@ namespace RimDumper.Parsers
                         continue;
                     }
 
-                    row["DamageTypeArgs".ParserTranslate()] = projectile.damageDef.LabelCap;
+                    row["DamageTypeArgs".ParserTranslate()] = projectile.damageDef?.LabelCap;
                     row["Damage".ParserTranslate()] = projectile.damageAmountBase;
                     row["ArmorPenetration".ParserTranslate()] = projectile.armorPenetrationBase.Nullify(); // OUTDATED
                     row["ArmorPenetrationSharp".ParserTranslate()] = projectile.armorPenetrationSharp.Nullify();
