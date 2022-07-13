@@ -58,12 +58,16 @@
     <RimDumper.Parser.workDisables>workDisables</RimDumper.Parser.workDisables>
 
     <!-- BodyParts -->
+    <RimDumper.Parser.BodyPart>Часть тела</RimDumper.Parser.BodyPart>
+    <RimDumper.Parser.IncompatibleWithTags>Несовместим с тегами</RimDumper.Parser.IncompatibleWithTags>
+    <RimDumper.Parser.Tags>Теги</RimDumper.Parser.Tags>
     <RimDumper.Parser.Efficiency>Эффективность</RimDumper.Parser.Efficiency>
 
     <!-- Debuffs -->
     <RimDumper.Parser.StackLimit>Макс.кол-во</RimDumper.Parser.StackLimit>
     <RimDumper.Parser.DurationDays>Длительность дней</RimDumper.Parser.DurationDays>
     <RimDumper.Parser.StackedEffectMultiplier>Множитель</RimDumper.Parser.StackedEffectMultiplier>
+    <RimDumper.Parser.AllRecipeUsers>Применим к</RimDumper.Parser.AllRecipeUsers>
 
     <!-- Drugs -->
     <RimDumper.Parser.DrugName>Вещество</RimDumper.Parser.DrugName>
@@ -119,6 +123,8 @@
     <RimDumper.Parser.CE_SwayFactor>CE: Раскачивание</RimDumper.Parser.CE_SwayFactor>
     <RimDumper.Parser.Range>Дальность</RimDumper.Parser.Range>
     <RimDumper.Parser.Accuracy>Точность</RimDumper.Parser.Accuracy>
+    <RimDumper.Parser.TurretGun>Турель</RimDumper.Parser.TurretGun>
+    <RimDumper.Parser.Artillery>Артиллерия</RimDumper.Parser.Artillery>
 
     <!-- Plants -->
     <RimDumper.Parser.NutritionPer10Days>Питательность урожая за 10 дней(Почва 180%)</RimDumper.Parser.NutritionPer10Days>

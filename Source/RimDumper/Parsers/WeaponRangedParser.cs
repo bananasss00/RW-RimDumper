@@ -74,6 +74,9 @@ namespace RimDumper.Parsers
                         row["DamageType".ParserTranslate()] = verb.defaultProjectile.projectile.damageDef.label;
                     }
 
+                    row["TurretGun".ParserTranslate()] = d.weaponTags?.Contains("TurretGun");
+                    row["Artillery".ParserTranslate()] = d.weaponTags?.Contains("Artillery");
+
                     if (d.weaponTags != null)
                     {
                         row["WeaponTags".ParserTranslate()] = string.Join("; ", d.weaponTags.OrderBy(x => x).ToArray());

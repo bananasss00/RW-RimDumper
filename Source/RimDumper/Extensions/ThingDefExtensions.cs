@@ -54,7 +54,7 @@ namespace RimDumper.Extensions
             float count = 0f;
             _thingsOnMap.ForEach(t =>
             {
-                if (!t.Position.Fogged(t.Map) && d == t.def)
+                if (t.Map != null && !t.Position.Fogged(t.Map) && d == t.def)
                 {
                     count += t.stackCount;
                 }

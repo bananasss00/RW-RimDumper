@@ -58,7 +58,11 @@
     <RimDumper.Parser.workDisables>workDisables</RimDumper.Parser.workDisables>
 
     <!-- BodyParts -->
+	<RimDumper.Parser.BodyPart>Body part</RimDumper.Parser.BodyPart>
+	<RimDumper.Parser.IncompatibleWithTags>Incompatible with Tags</RimDumper.Parser.IncompatibleWithTags>
+	<RimDumper.Parser.Tags>Tags</RimDumper.Parser.Tags>
     <RimDumper.Parser.Efficiency>Efficiency</RimDumper.Parser.Efficiency>
+    <RimDumper.Parser.AllRecipeUsers>Recipe Users</RimDumper.Parser.AllRecipeUsers>
 
     <!-- Debuffs -->
     <RimDumper.Parser.StackLimit>Stack limit</RimDumper.Parser.StackLimit>
@@ -120,6 +124,8 @@
     <RimDumper.Parser.CE_SwayFactor>CE: Sway factor</RimDumper.Parser.CE_SwayFactor>
     <RimDumper.Parser.Range>Range</RimDumper.Parser.Range>
     <RimDumper.Parser.Accuracy>Accuracy</RimDumper.Parser.Accuracy>
+	<RimDumper.Parser.TurretGun>TurretGun</RimDumper.Parser.TurretGun>
+	<RimDumper.Parser.Artillery>Artillery</RimDumper.Parser.Artillery>
 
     <!-- Plants -->
     <RimDumper.Parser.NutritionPer10Days>Nutrition per 10 days(Soil 180%)</RimDumper.Parser.NutritionPer10Days>
